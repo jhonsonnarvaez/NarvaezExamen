@@ -22,10 +22,10 @@ namespace NarvaezExamen
 
         private async void btnCalcular_Clicked(object sender, EventArgs e)
         {
-            double montoInicial = 1800;
+            double montoInicial = 1800.0;
             double porcentajeCuota = 0.05;
             double monto = Convert.ToDouble(txtMontoInicial.Text);
-            if (monto <= 0 || monto > montoInicial)
+            if (monto <= 0.0 || monto > montoInicial)
             {
                 limpiarCampos();
                 await DisplayAlert("Mensaje", "El monto inicial debe estar entre 1 y 1800", "OK");
