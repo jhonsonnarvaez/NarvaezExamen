@@ -48,7 +48,7 @@ namespace NarvaezExamen
         {
             string usuario = lblBienvenido.Text;
             string nombre = txtNombre.Text;
-            double totalPagar = Convert.ToDouble(txtPagoMensual.Text) * 3;
+            double totalPagar = Convert.ToDouble(txtMontoInicial.Text) + (Convert.ToDouble(txtPagoMensual.Text) * 3);
             string valorPagar = totalPagar.ToString();
             try
             {
