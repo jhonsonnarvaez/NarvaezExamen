@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NarvaezExamen.Resumen">
+    <ContentPage.Content>
+        <StackLayout Padding="10,12">
+            <Label x:Name="lblUsuario"  TextColor="Black" FontSize="20"/>
+            <Label Text="RESUMEN" FontSize="20" TextColor="Black" FontFamily="arial" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="50"/>
+                    <RowDefinition Height="50"/>
+                </Grid.RowDefinitions>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Label Text="Nombre: " TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                <Label x:Name="txtNombre" TextColor="Black" Grid.Row="0" Grid.Column="1"/>
+
+                <Label Text="Total a pagar: " TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                <Label x:Name="txtTotal" TextColor="Black"   Grid.Row="1" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

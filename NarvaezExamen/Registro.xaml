@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NarvaezExamen.Registro">
+    <ContentPage.Content>
+        <StackLayout Padding="10,12">
+            <Label x:Name="lblBienvenido"  TextColor="Black" FontSize="20"/>
+            <Label Text="REGISTRO" FontSize="20" TextColor="Black" FontFamily="arial" VerticalOptions="Center" HorizontalOptions="Center"/>
+            <ScrollView>
+                <Grid>
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                        <RowDefinition Height="50"/>
+                    </Grid.RowDefinitions>
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition/>
+                        <ColumnDefinition/>
+                    </Grid.ColumnDefinitions>
+                    <Label Text="Nombre: " TextColor="Black" Grid.Row="0" Grid.Column="0"/>
+                    <Entry x:Name="txtNombre" TextColor="Black" Keyboard="Text" Grid.Row="0" Grid.Column="1"/>
+
+                    <Label Text="Monto Inicial: " TextColor="Black" Grid.Row="1" Grid.Column="0"/>
+                    <Entry x:Name="txtMontoInicial" TextColor="Black"  Keyboard="Numeric" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Pago Mensual: " TextColor="Black" Grid.Row="2" Grid.Column="0"/>
+                    <Entry x:Name="txtPagoMensual" TextColor="Black" IsReadOnly="True" Grid.Row="2" Grid.Column="1"/>
+
+                    <Label Text="" TextColor="Black" Grid.Row="3" Grid.Column="0"/>
+                    <Button x:Name="btnCalcular" Text="Calcular" VerticalOptions="Center"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                BorderColor="Blue"
+                BorderWidth="1.5"
+                CornerRadius="50" Clicked="btnCalcular_Clicked" Grid.Row="3" Grid.Column="1"/>
+                </Grid>
+            </ScrollView>
+            <Button x:Name="btnGuardar" Text="Guardar" VerticalOptions="Center"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                BorderColor="Blue"
+                BorderWidth="1.5"
+                CornerRadius="50" Clicked="btnGuardar_Clicked"/>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

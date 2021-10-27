@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="NarvaezExamen.Login"
+             BackgroundColor="#e0fafb">
+    <ContentPage.Content>
+        <StackLayout  Padding="40" VerticalOptions="Center" HorizontalOptions="FillAndExpand">
+            <Image Aspect="AspectFit" Source="https://sbsconsulting.com.ec/wp-content/uploads/2018/01/LOGO-UISRAEL-768x209.png" 
+                   WidthRequest="180" HeightRequest="180"></Image>
+            <Entry x:Name="txtUsuario" Placeholder="Usuario" PlaceholderColor="Gray"></Entry>
+            <Entry x:Name="txtPassword" Placeholder="Contraseña" IsPassword="True" PlaceholderColor="Gray"></Entry>
+            <Button x:Name="btnLoguear"
+                VerticalOptions="Center"
+                Text="Login"
+                TextColor="Black"
+                BackgroundColor="Transparent"
+                BorderColor="blue"
+                BorderWidth="1.5"
+                CornerRadius="50"
+                Clicked="btnLoguear_Clicked"></Button>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
